@@ -32,7 +32,7 @@ pre {
 
 Folyamatosan bővülő dokumentáció az R-es találkozóinkról. Ha hibát vagy hiányosságokat találtok benne, ti is javíthatjátok, de minden visszajelzésnek örülök. Amennyiben más is érdeklődne az összefoglalók iránt, feel free to share! A github [fiókomból](https://github.com/zoeldi/LearnR) bárki letöltheti ingyenesen az aktuális verziót. 
 
-# Telepítés
+# Setup
 
 1. Töltsd le az R-nyelv legfrissebb verzióját [innen](https://cran.r-project.org/bin/windows/base/) és telepítsd.
     
@@ -78,7 +78,7 @@ Type 'q()' to quit R.
 ```
 
 
-# Megjelenítés
+# Print
 
 ```{r}
 {# Print
@@ -92,7 +92,7 @@ Type 'q()' to quit R.
 }
 ```
 
-# Hozzárendelés
+# Assignment
 
 ```{r}
 # Assignment operator
@@ -104,13 +104,15 @@ x - 3 -> z
 assign('valtozo', x + z)
 
 # Show it!
-{print(x)
+{
+  print(x)
   print(y)
   print(z)
-  print(valtozo)}
+  print(valtozo)
+}
 ```
 
-# Adattípusok
+# Data types
 
 ## Numeric
 
@@ -124,8 +126,10 @@ x = 1234L
 y = as.integer(456.823)
 
 # Show it!
-{print(x)
-  print(y)}
+{
+  print(x)
+  print(y)
+}
 ```
 
 ### Double
@@ -136,8 +140,10 @@ x = 15
 y = 15.896
 
 # Show it!
-{print(x)
-  print(y)}
+{
+  print(x)
+  print(y)
+}
 ```
 
 ## Character (string)
@@ -150,8 +156,10 @@ x = 'A very long string!'
 y = as.character(1234)
 
 # Show it!
-{print(x)
-  print(y)}
+{
+  print(x)
+  print(y)
+}
 ```
 
 ## Logical (boolean)
@@ -171,16 +179,79 @@ y3 = as.logical(0)
 logical_sum = x1 + x2 + y1
 
 # Show it!
-{print(x1)
+{
+  print(x1)
   print(x2)
   print(x3)
   print(y1)
   print(y2)
   print(y3)
-  print(logical_sum)}
+  print(logical_sum)
+}
 ```
 
-# Vektor
+# Logical operators
+```{r}
+# NUmeric data
+num1 = 15
+num2 = 16
+
+# Character data
+char1 = 'KSH'
+char2 = 'HCSO'
+
+# Logical data
+logic1 = T
+logic2 = F
+
+# Show it!
+{
+  print(num1)
+  print(num2)
+  print(char1)
+  print(char2)
+  print(logic1)
+  print(logic2)
+}
+```
+
+## Comparison
+
+```{r}
+# Equal to
+print(char1 == 'HCSO')
+
+# Not equal to
+print(num1 !=  135)
+
+# Less than or equal
+print(char1 <= char2)
+
+# Greater than or equal
+print(num1 >= num2 - 100)
+```
+
+## Condition
+
+```{r}
+# and
+{
+  print(num1 == 100 & num2 == 16)
+  print(num1 <= 100 & num2 >= num1 & char1 == 'KSH')
+}
+
+# or
+{
+  print(char1)
+}
+```
+
+
+
+
+# Vector
+
+## Combine
 
 ```{r}
 # Combine elements
@@ -194,6 +265,25 @@ uj_nevek = c('Magyar Márton', 'Horváth Helga', 'Angyal Albert')
 viseltnev = c(viseltnev, uj_nevek)
 
 # Mutasd 
-{print(korev)
-  print(viseltnev)}
+{
+  print(korev)
+  print(viseltnev)
+}
 ```
+
+## Access
+
+```{r}
+# Access by positional index
+korev_2 = korev[c(1:3, 7)]
+
+# Access by binary index
+viseltnev_2 = viseltnev[c(T, T, T, F, F, F, T)]
+
+# Show it!
+{
+  print(korev_2_1)
+  print(viseltnev_2)
+}
+```
+

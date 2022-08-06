@@ -3025,8 +3025,8 @@ vagy hiányosságokat találtok benne, ti is javíthatjátok, de minden
 visszajelzésnek örülök. Amennyiben más is érdeklődne az összefoglalók
 iránt, feel free to share! A github <a href="https://github.com/zoeldi/LearnR">fiókomból</a> bárki letöltheti
 ingyenesen az aktuális verziót.</p>
-<div id="telepítés" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Telepítés</h1>
+<div id="setup" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Setup</h1>
 <ol style="list-style-type: decimal">
 <li><p>Töltsd le az R-nyelv legfrissebb verzióját <a href="https://cran.r-project.org/bin/windows/base/">innen</a> és
 telepítsd.</p>
@@ -3074,8 +3074,8 @@ Type &#39;demo()&#39; for some demos, &#39;help()&#39; for on-line help, or
 &#39;help.start()&#39; for an HTML browser interface to help.
 Type &#39;q()&#39; to quit R.</code></pre>
 </div>
-<div id="megjelenítés" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Megjelenítés</h1>
+<div id="print" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Print</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueyMgUHJpbnRcbiAgcHJpbnQoMSsxKVxuICBcbiAgIyBTdHJpbmcgJ+KApidcbiAgcHJpbnQoJ0hlbGxvIEtTSCEhIScpXG4gIFxuICAjIFN0cmluZyBcIuKAplwiXG4gIHByaW50KFwiSGVsbG8gVXNlcuKAplwiKVxufVxuYGBgIn0= -->
@@ -3097,11 +3097,11 @@ Type &#39;q()&#39; to quit R.</code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
-<div id="hozzárendelés" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Hozzárendelés</h1>
+<div id="assignment" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Assignment</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBc3NpZ25tZW50IG9wZXJhdG9yXG54IDwtIDUgKiAyXG55ID0gJ0LDqWxhJ1xueCAtIDMgLT4gelxuXG4jIEFzc2lnbm1lbnQgZnVuY3Rpb25cbmFzc2lnbigndmFsdG96bycsIHggKyB6KVxuXG4jIFNob3cgaXQhXG57cHJpbnQoeClcbiAgcHJpbnQoeSlcbiAgcHJpbnQoeilcbiAgcHJpbnQodmFsdG96byl9XG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBc3NpZ25tZW50IG9wZXJhdG9yXG54IDwtIDUgKiAyXG55ID0gJ0LDqWxhJ1xueCAtIDMgLT4gelxuXG4jIEFzc2lnbm1lbnQgZnVuY3Rpb25cbmFzc2lnbigndmFsdG96bycsIHggKyB6KVxuXG4jIFNob3cgaXQhXG57XG4gIHByaW50KHgpXG4gIHByaW50KHkpXG4gIHByaW50KHopXG4gIHByaW50KHZhbHRvem8pXG59XG5gYGAifQ== -->
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assignment operator</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="sc">*</span> <span class="dv">2</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="st">&#39;Béla&#39;</span></span>
@@ -3111,10 +3111,12 @@ Type &#39;q()&#39; to quit R.</code></pre>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">assign</span>(<span class="st">&#39;valtozo&#39;</span>, x <span class="sc">+</span> z)</span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Show it!</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>{<span class="fu">print</span>(x)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y)</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(z)</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(valtozo)}</span></code></pre></div>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(z)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(valtozo)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEwXG5bMV0gXCJCw6lsYVwiXG5bMV0gN1xuWzFdIDE3XG4ifQ== -->
 <pre><code>[1] 10
@@ -3125,15 +3127,15 @@ Type &#39;q()&#39; to quit R.</code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
-<div id="adattípusok" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Adattípusok</h1>
+<div id="data-types" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Data types</h1>
 <div id="numeric" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Numeric</h2>
 <div id="integer" class="section level3" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Integer</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBJbXBsaWNpdCBpbnRlZ2VyIHdpdGggYExgXG54ID0gMTIzNExcblxuIyBFeHBsaWNpdCBpbnRlZ2VyXG55ID0gYXMuaW50ZWdlcig0NTYuODIzKVxuXG4jIFNob3cgaXQhXG57cHJpbnQoeClcbiAgcHJpbnQoeSl9XG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBJbXBsaWNpdCBpbnRlZ2VyIHdpdGggYExgXG54ID0gMTIzNExcblxuIyBFeHBsaWNpdCBpbnRlZ2VyXG55ID0gYXMuaW50ZWdlcig0NTYuODIzKVxuXG4jIFNob3cgaXQhXG57XG4gIHByaW50KHgpXG4gIHByaW50KHkpXG59XG5gYGAifQ== -->
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Implicit integer with `L`</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> 1234L</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -3141,8 +3143,10 @@ Type &#39;q()&#39; to quit R.</code></pre>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">as.integer</span>(<span class="fl">456.823</span>)</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Show it!</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>{<span class="fu">print</span>(x)</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y)}</span></code></pre></div>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEyMzRcblsxXSA0NTZcbiJ9 -->
 <pre><code>[1] 1234
@@ -3155,14 +3159,16 @@ Type &#39;q()&#39; to quit R.</code></pre>
 <h3><span class="header-section-number">4.1.2</span> Double</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBXaGVuIG5vdCBkZWZpbmVkIGFzIGludGVnZXIsIG51bWVyaWMgYmVjb21lcyBhIGRvdWJsZVxueCA9IDE1XG55ID0gMTUuODk2XG5cbiMgU2hvdyBpdCFcbntwcmludCh4KVxuICBwcmludCh5KX1cbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBXaGVuIG5vdCBkZWZpbmVkIGFzIGludGVnZXIsIG51bWVyaWMgYmVjb21lcyBhIGRvdWJsZVxueCA9IDE1XG55ID0gMTUuODk2XG5cbiMgU2hvdyBpdCFcbntcbiAgcHJpbnQoeClcbiAgcHJpbnQoeSlcbn1cbmBgYCJ9 -->
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># When not defined as integer, numeric becomes a double</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">15</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fl">15.896</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Show it!</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>{<span class="fu">print</span>(x)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y)}</span></code></pre></div>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIDE1XG5bMV0gMTUuODk2XG4ifQ== -->
 <pre><code>[1] 15
@@ -3177,7 +3183,7 @@ Type &#39;q()&#39; to quit R.</code></pre>
 (string)</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBJbXBsaWNpdFxueCA9ICdBIHZlcnkgbG9uZyBzdHJpbmchJ1xuXG4jIEV4cGxpY2l0XG55ID0gYXMuY2hhcmFjdGVyKDEyMzQpXG5cbiMgU2hvdyBpdCFcbntwcmludCh4KVxuICBwcmludCh5KX1cbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBJbXBsaWNpdFxueCA9ICdBIHZlcnkgbG9uZyBzdHJpbmchJ1xuXG4jIEV4cGxpY2l0XG55ID0gYXMuY2hhcmFjdGVyKDEyMzQpXG5cbiMgU2hvdyBpdCFcbntcbiAgcHJpbnQoeClcbiAgcHJpbnQoeSlcbn1cbmBgYCJ9 -->
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Implicit</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="st">&#39;A very long string!&#39;</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -3185,8 +3191,10 @@ Type &#39;q()&#39; to quit R.</code></pre>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">as.character</span>(<span class="dv">1234</span>)</span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Show it!</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>{<span class="fu">print</span>(x)</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y)}</span></code></pre></div>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiQSB2ZXJ5IGxvbmcgc3RyaW5nIVwiXG5bMV0gXCIxMjM0XCJcbiJ9 -->
 <pre><code>[1] &quot;A very long string!&quot;
@@ -3200,7 +3208,7 @@ Type &#39;q()&#39; to quit R.</code></pre>
 (boolean)</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUcnVlXG54MSA9IFRcbngyID0gVFJVRVxueDMgPSBhcy5sb2dpY2FsKDEpXG5cbiMgRmFsc2VcbnkxID0gRlxueTIgPSBGQUxTRVxueTMgPSBhcy5sb2dpY2FsKDApXG5cbiMgV29ya3MgYXMgMS8wIGFzIHdlbGwhXG5sb2dpY2FsX3N1bSA9IHgxICsgeDIgKyB5MVxuXG4jIFNob3cgaXQhXG57cHJpbnQoeDEpXG4gIHByaW50KHgyKVxuICBwcmludCh4MylcbiAgcHJpbnQoeTEpXG4gIHByaW50KHkyKVxuICBwcmludCh5MylcbiAgcHJpbnQobG9naWNhbF9zdW0pfVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUcnVlXG54MSA9IFRcbngyID0gVFJVRVxueDMgPSBhcy5sb2dpY2FsKDEpXG5cbiMgRmFsc2VcbnkxID0gRlxueTIgPSBGQUxTRVxueTMgPSBhcy5sb2dpY2FsKDApXG5cbiMgV29ya3MgYXMgMS8wIGFzIHdlbGwhXG5sb2dpY2FsX3N1bSA9IHgxICsgeDIgKyB5MVxuXG4jIFNob3cgaXQhXG57XG4gIHByaW50KHgxKVxuICBwcmludCh4MilcbiAgcHJpbnQoeDMpXG4gIHByaW50KHkxKVxuICBwcmludCh5MilcbiAgcHJpbnQoeTMpXG4gIHByaW50KGxvZ2ljYWxfc3VtKVxufVxuYGBgIn0= -->
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># True</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">=</span> T</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>x2 <span class="ot">=</span> <span class="cn">TRUE</span></span>
@@ -3215,13 +3223,15 @@ Type &#39;q()&#39; to quit R.</code></pre>
 <span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>logical_sum <span class="ot">=</span> x1 <span class="sc">+</span> x2 <span class="sc">+</span> y1</span>
 <span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Show it!</span></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>{<span class="fu">print</span>(x1)</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x2)</span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x3)</span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y1)</span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y2)</span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y3)</span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(logical_sum)}</span></code></pre></div>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x1)</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x2)</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(x3)</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y1)</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y2)</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(y3)</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(logical_sum)</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcblsxXSBUUlVFXG5bMV0gVFJVRVxuWzFdIEZBTFNFXG5bMV0gRkFMU0VcblsxXSBGQUxTRVxuWzFdIDJcbiJ9 -->
 <pre><code>[1] TRUE
@@ -3236,24 +3246,119 @@ Type &#39;q()&#39; to quit R.</code></pre>
 <!-- rnb-text-begin -->
 </div>
 </div>
-<div id="vektor" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> Vektor</h1>
+<div id="logical-operators" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Logical operators</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBDb21iaW5lIGVsZW1lbnRzXG5rb3JldiA9IGMoMjUsIDM1LCA0OCwgMTApXG52aXNlbHRuZXYgPSBjKCdCZXJ0w7NrIELDqWxhJywgJ0tpc3MgS8Ohcm9seScsICdMZW5neWVsIExpbGxhJywgJ05vdsOhayBOw7NyYScpXG5cbiMgQ29tYmluZSB2ZWN0b3JzXG5rb3JldiA9IGMoa29yZXYsIDUyLCBjKDY2LCAxMykpXG5cbnVqX25ldmVrID0gYygnTWFneWFyIE3DoXJ0b24nLCAnSG9ydsOhdGggSGVsZ2EnLCAnQW5neWFsIEFsYmVydCcpXG52aXNlbHRuZXYgPSBjKHZpc2VsdG5ldiwgdWpfbmV2ZWspXG5cbiMgTXV0YXNkIFxue3ByaW50KGtvcmV2KVxuICBwcmludCh2aXNlbHRuZXYpfVxuYGBgIn0= -->
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine elements</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>korev <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">48</span>, <span class="dv">10</span>)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>viseltnev <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&#39;Bertók Béla&#39;</span>, <span class="st">&#39;Kiss Károly&#39;</span>, <span class="st">&#39;Lengyel Lilla&#39;</span>, <span class="st">&#39;Novák Nóra&#39;</span>)</span>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBOVW1lcmljIGRhdGFcbm51bTEgPSAxNVxubnVtMiA9IDE2XG5cbiMgQ2hhcmFjdGVyIGRhdGFcbmNoYXIxID0gJ0tTSCdcbmNoYXIyID0gJ0hDU08nXG5cbiMgTG9naWNhbCBkYXRhXG5sb2dpYzEgPSBUXG5sb2dpYzIgPSBGXG5cbiMgU2hvdyBpdCFcbntcbiAgcHJpbnQobnVtMSlcbiAgcHJpbnQobnVtMilcbiAgcHJpbnQoY2hhcjEpXG4gIHByaW50KGNoYXIyKVxuICBwcmludChsb2dpYzEpXG4gIHByaW50KGxvZ2ljMilcbn1cbmBgYCJ9 -->
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NUmeric data</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>num1 <span class="ot">=</span> <span class="dv">15</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>num2 <span class="ot">=</span> <span class="dv">16</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine vectors</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>korev <span class="ot">=</span> <span class="fu">c</span>(korev, <span class="dv">52</span>, <span class="fu">c</span>(<span class="dv">66</span>, <span class="dv">13</span>))</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>uj_nevek <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&#39;Magyar Márton&#39;</span>, <span class="st">&#39;Horváth Helga&#39;</span>, <span class="st">&#39;Angyal Albert&#39;</span>)</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>viseltnev <span class="ot">=</span> <span class="fu">c</span>(viseltnev, uj_nevek)</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Mutasd </span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>{<span class="fu">print</span>(korev)</span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(viseltnev)}</span></code></pre></div>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Character data</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>char1 <span class="ot">=</span> <span class="st">&#39;KSH&#39;</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>char2 <span class="ot">=</span> <span class="st">&#39;HCSO&#39;</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Logical data</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>logic1 <span class="ot">=</span> T</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>logic2 <span class="ot">=</span> F</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Show it!</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(num1)</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(num2)</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(char1)</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(char2)</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(logic1)</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(logic2)</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDE1XG5bMV0gMTZcblsxXSBcIktTSFwiXG5bMV0gXCJIQ1NPXCJcblsxXSBUUlVFXG5bMV0gRkFMU0VcbiJ9 -->
+<pre><code>[1] 15
+[1] 16
+[1] &quot;KSH&quot;
+[1] &quot;HCSO&quot;
+[1] TRUE
+[1] FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<div id="comparison" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Comparison</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBFcXVhbCB0b1xucHJpbnQoY2hhcjEgPT0gJ0hDU08nKVxuYGBgIn0= -->
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Equal to</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(char1 <span class="sc">==</span> <span class="st">&#39;HCSO&#39;</span>)</span></code></pre></div>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG4ifQ== -->
+<pre><code>[1] FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBOb3QgZXF1YWwgdG9cbnByaW50KG51bTEgIT0gIDEzNSlcbmBgYCJ9 -->
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Not equal to</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(num1 <span class="sc">!=</span>  <span class="dv">135</span>)</span></code></pre></div>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBMZXNzIHRoYW4gb3IgZXF1YWxcbnByaW50KGNoYXIxIDw9IGNoYXIyKVxuYGBgIn0= -->
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Less than or equal</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(char1 <span class="sc">&lt;=</span> char2)</span></code></pre></div>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG4ifQ== -->
+<pre><code>[1] FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBHcmVhdGVyIHRoYW4gb3IgZXF1YWxcbnByaW50KG51bTEgPj0gbnVtMiAtIDEwMClcbmBgYCJ9 -->
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Greater than or equal</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(num1 <span class="sc">&gt;=</span> num2 <span class="sc">-</span> <span class="dv">100</span>)</span></code></pre></div>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="condition" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Condition</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBhbmRcbntcbiAgcHJpbnQobnVtMSA9PSAxMDAgJiBudW0yID09IDE2KVxuICBwcmludChudW0xIDw9IDEwMCAmIG51bTIgPj0gbnVtMSAmIGNoYXIxID09ICdLU0gnKVxufVxuYGBgIn0= -->
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># and</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(num1 <span class="sc">==</span> <span class="dv">100</span> <span class="sc">&amp;</span> num2 <span class="sc">==</span> <span class="dv">16</span>)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(num1 <span class="sc">&lt;=</span> <span class="dv">100</span> <span class="sc">&amp;</span> num2 <span class="sc">&gt;=</span> num1 <span class="sc">&amp;</span> char1 <span class="sc">==</span> <span class="st">&#39;KSH&#39;</span>)</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG5bMV0gVFJVRVxuIn0= -->
+<pre><code>[1] FALSE
+[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+</div>
+<div id="vector" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Vector</h1>
+<div id="combine" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Combine</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBDb21iaW5lIGVsZW1lbnRzXG5rb3JldiA9IGMoMjUsIDM1LCA0OCwgMTApXG52aXNlbHRuZXYgPSBjKCdCZXJ0w7NrIELDqWxhJywgJ0tpc3MgS8Ohcm9seScsICdMZW5neWVsIExpbGxhJywgJ05vdsOhayBOw7NyYScpXG5cbiMgQ29tYmluZSB2ZWN0b3JzXG5rb3JldiA9IGMoa29yZXYsIDUyLCBjKDY2LCAxMykpXG5cbnVqX25ldmVrID0gYygnTWFneWFyIE3DoXJ0b24nLCAnSG9ydsOhdGggSGVsZ2EnLCAnQW5neWFsIEFsYmVydCcpXG52aXNlbHRuZXYgPSBjKHZpc2VsdG5ldiwgdWpfbmV2ZWspXG5cbiMgTXV0YXNkIFxue1xuICBwcmludChrb3JldilcbiAgcHJpbnQodmlzZWx0bmV2KVxufVxuYGBgIn0= -->
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine elements</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>korev <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">48</span>, <span class="dv">10</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>viseltnev <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&#39;Bertók Béla&#39;</span>, <span class="st">&#39;Kiss Károly&#39;</span>, <span class="st">&#39;Lengyel Lilla&#39;</span>, <span class="st">&#39;Novák Nóra&#39;</span>)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine vectors</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>korev <span class="ot">=</span> <span class="fu">c</span>(korev, <span class="dv">52</span>, <span class="fu">c</span>(<span class="dv">66</span>, <span class="dv">13</span>))</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>uj_nevek <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&#39;Magyar Márton&#39;</span>, <span class="st">&#39;Horváth Helga&#39;</span>, <span class="st">&#39;Angyal Albert&#39;</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>viseltnev <span class="ot">=</span> <span class="fu">c</span>(viseltnev, uj_nevek)</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Mutasd </span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(korev)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(viseltnev)</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIDI1IDM1IDQ4IDEwIDUyIDY2IDEzXG5bMV0gXCJCZXJ0w7NrIELDqWxhXCIgICBcIktpc3MgS8Ohcm9seVwiICAgXCJMZW5neWVsIExpbGxhXCIgXCJOb3bDoWsgTsOzcmFcIiAgICBcIk1hZ3lhciBNw6FydG9uXCIgXCJIb3J2w6F0aCBIZWxnYVwiXG5bN10gXCJBbmd5YWwgQWxiZXJ0XCJcbiJ9 -->
 <pre><code>[1] 25 35 48 10 52 66 13
@@ -3261,9 +3366,36 @@ Type &#39;q()&#39; to quit R.</code></pre>
 [7] &quot;Angyal Albert&quot;</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="access" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Access</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBY2Nlc3MgYnkgcG9zaXRpb25hbCBpbmRleFxua29yZXZfMiA9IGtvcmV2W2MoMTozLCA3KV1cblxuIyBBY2Nlc3MgYnkgYmluYXJ5IGluZGV4XG52aXNlbHRuZXZfMiA9IHZpc2VsdG5ldltjKFQsIFQsIFQsIEYsIEYsIEYsIFQpXVxuXG4jIFNob3cgaXQhXG57XG4gIHByaW50KGtvcmV2XzJfMSlcbiAgcHJpbnQodmlzZWx0bmV2XzIpXG59XG5gYGAifQ== -->
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Access by positional index</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>korev_2 <span class="ot">=</span> korev[<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">7</span>)]</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Access by binary index</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>viseltnev_2 <span class="ot">=</span> viseltnev[<span class="fu">c</span>(T, T, T, F, F, F, T)]</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Show it!</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(korev_2_1)</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(viseltnev_2)</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDI1IDM1IDQ4IDEzXG5bMV0gXCJCZXJ0w7NrIELDqWxhXCIgICBcIktpc3MgS8Ohcm9seVwiICAgXCJMZW5neWVsIExpbGxhXCIgXCJBbmd5YWwgQWxiZXJ0XCJcbiJ9 -->
+<pre><code>[1] 25 35 48 13
+[1] &quot;Bertók Béla&quot;   &quot;Kiss Károly&quot;   &quot;Lengyel Lilla&quot; &quot;Angyal Albert&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+</div>
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgS2FsYW5kb2siDQpvdXRwdXQ6IA0KICBodG1sX25vdGVib29rOiANCiAgICBoaWdobGlnaHQ6IHplbmJ1cm4NCiAgICBudW1iZXJfc2VjdGlvbnM6IHllcw0KICAgIHRoZW1lOiBjb3Ntbw0KICAgIGNvZGVfZm9sZGluZzogbm9uZQ0KICAgIHRvYzogeWVzDQogICAgdG9jX2Zsb2F0OiB0cnVlDQotLS0NCg0KYGBge2Nzc30NCi5tYWluLWNvbnRhaW5lciB7DQogICAgbWF4LXdpZHRoOiAxNTAwcHggIWltcG9ydGFudDsNCiAgICB0ZXh0LWFsaWduOiBqdXN0aWZ5Ow0KfQ0KYm9keXsNCiAgZm9udC1mYW1pbHk6IENhbGlicmk7DQogIGZvbnQtc2l6ZTogMTVwdDsNCn0NCmNvZGUucnsNCiAgZm9udC1zaXplOiAxN3B4Ow0KfQ0KcHJlIHsNCiAgZm9udC1zaXplOiAxN3B4Ow0KICBtYXgtaGVpZ2h0OiA4MDBweCAhaW1wb3J0YW50Ow0KICBvdmVyZmxvdy15OiBhdXRvICFpbXBvcnRhbnQ7DQogIG92ZXJmbG93LXg6IGF1dG8gIWltcG9ydGFudDsNCn0NCmBgYA0KDQpGb2x5YW1hdG9zYW4gYsWRdsO8bMWRIGRva3VtZW50w6FjacOzIGF6IFItZXMgdGFsw6Fsa296w7Npbmtyw7NsLiBIYSBoaWLDoXQgdmFneSBoacOhbnlvc3PDoWdva2F0IHRhbMOhbHRvayBiZW5uZSwgdGkgaXMgamF2w610aGF0asOhdG9rLCBkZSBtaW5kZW4gdmlzc3phamVsesOpc25layDDtnLDvGzDtmsuIEFtZW5ueWliZW4gbcOhcyBpcyDDqXJkZWtsxZFkbmUgYXogw7Zzc3plZm9nbGFsw7NrIGlyw6FudCwgZmVlbCBmcmVlIHRvIHNoYXJlISBBIGdpdGh1YiBbZmnDs2tvbWLDs2xdKGh0dHBzOi8vZ2l0aHViLmNvbS96b2VsZGkvTGVhcm5SKSBiw6Fya2kgbGV0w7ZsdGhldGkgaW5neWVuZXNlbiBheiBha3R1w6FsaXMgdmVyemnDs3QuIA0KDQojIFRlbGVww610w6lzDQoNCjEuIFTDtmx0c2QgbGUgYXogUi1ueWVsdiBsZWdmcmlzc2ViYiB2ZXJ6acOzasOhdCBbaW5uZW5dKGh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL2Jpbi93aW5kb3dzL2Jhc2UvKSDDqXMgdGVsZXDDrXRzZC4NCiAgICANCiAgICAtIEEgc2Fqw6F0IGfDqXBlbiBrw7Z2ZXNkIGF6IHV0YXPDrXTDoXNva2F0LiBNw6FzIGZlbGFkYXRvZCBuaW5jc2VuLg0KICAgIC0gQSBoaXZhdGFsaSBnw6lwZW4gYSB0ZWxlcMOtdMOpcyBoZWx5w6l0IG3Ds2Rvc8OtdHNkIGVycmU6DQogICAgDQogICAgICBgQzpcVXNlcnNcPGZlbGhhc3puw6Fsw7NuZXZlZD5cT3duUmANCiAgICAgICAgDQoyLiBUw7ZsdHNkIGxlIGF6IFJTdHVkaW8gbGVnZnJpc3NlYmIgRGVza3RvcCB2ZXJ6acOzasOhdCBbaW5uZW5dKGh0dHBzOi8vd3d3LnJzdHVkaW8uY29tL3Byb2R1Y3RzL3JzdHVkaW8vKSDDqXMgdGVsZXDDrXRzZC4NCg0KICAgIC0gQSBzYWrDoXQgZ8OpcGVuIGvDtnZlc2QgYXogdXRhc8OtdMOhc29rYXQuIE3DoXMgZmVsYWRhdG9kIG5pbmNzZW4uDQogICAgLSBBIGhpdmF0YWxpIGfDqXBlbiBhIHRlbGVww610w6lzIGhlbHnDqXQgbcOzZG9zw610c2QgZXJyZToNCiAgICAgIA0KICAgICAgYEM6XFVzZXJzXDxmZWxoYXN6bsOhbMOzIG5ldmVkPlxPd25SU3R1ZGlvYA0KDQozLiBJbmTDrXRzZCBlbCBheiBSU3R1ZGlvLXQgw6lzIGd5xZF6xZFkaiBtZWcgcsOzbGEsIGhvZ3kgYSBrb256b2xiYW4gZnV0IGF6IFIuDQogICAgDQogICAgLSBIYSBuZW0gaW5kdWwgYXogUiwgdmFneSBlZ3kgcsOpZ2kgdmVyemnDsyBrZXpkIGVsIGZ1dG5pLCBha2tvciBtYW51w6FsaXNhbiBrZWxsIGtpdsOhbGFzenRhbm9kIGF6IGFrdHXDoWxpc2F0LiBBeiBSU3R1ZGlvIG1lbsO8asOpYsWRbCBpbmR1bHZhLCB2w6FsYXN6ZCBhIGvDtnZldGtlesWRa2V0Og0KICAgIA0KICAgICAgYFRvb2xzID4gR2xvYmFsIE9wdGlvbnMgPiBHZW5lcmFsID4gUiBWZXJzaW9uID4gQ2hhbmdlID4gQ2hvb3NlIGEgc3BlY2lmaWMgdmVyc2lvbiA+IEJyb3dzZS4uLmANCiAgICANCiAgICAtIEEgZmVsdWdyw7MgYWJsYWtiYW4gdsOhbGFzemQga2kgYXogZWxzxZEgbMOpcMOpc2JlbiB0ZWxlcMOtdGV0dCBSIG1hcHDDoWrDoXQgYSBnw6lwZWRlbi4NCiAgICAtIE9rw6l6ZCBsZSBheiBhYmxha29rYXQgw6lzIGluZMOtdHNkIMO6anJhIGF6IFJTdHVkaW90IQ0KDQo0LiBBeiBhbMOhYmJpIGtvbnpvbMO8emVuZXQgZm9nYWQgYSBtZWdmZWxlbMWRIHZlcnrDs3N6w6FtbWFsPyBSZWFkeSB0byBnbyENCg0KYGBge30NClIgdmVyc2lvbiA0LjIuMSAoMjAyMi0wNi0yMyB1Y3J0KSAtLSAiRnVubnktTG9va2luZyBLaWQiDQpDb3B5cmlnaHQgKEMpIDIwMjIgVGhlIFIgRm91bmRhdGlvbiBmb3IgU3RhdGlzdGljYWwgQ29tcHV0aW5nDQpQbGF0Zm9ybTogeDg2XzY0LXc2NC1taW5ndzMyL3g2NCAoNjQtYml0KQ0KDQpSIGlzIGZyZWUgc29mdHdhcmUgYW5kIGNvbWVzIHdpdGggQUJTT0xVVEVMWSBOTyBXQVJSQU5UWS4NCllvdSBhcmUgd2VsY29tZSB0byByZWRpc3RyaWJ1dGUgaXQgdW5kZXIgY2VydGFpbiBjb25kaXRpb25zLg0KVHlwZSAnbGljZW5zZSgpJyBvciAnbGljZW5jZSgpJyBmb3IgZGlzdHJpYnV0aW9uIGRldGFpbHMuDQoNClIgaXMgYSBjb2xsYWJvcmF0aXZlIHByb2plY3Qgd2l0aCBtYW55IGNvbnRyaWJ1dG9ycy4NClR5cGUgJ2NvbnRyaWJ1dG9ycygpJyBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhbmQNCidjaXRhdGlvbigpJyBvbiBob3cgdG8gY2l0ZSBSIG9yIFIgcGFja2FnZXMgaW4gcHVibGljYXRpb25zLg0KDQpUeXBlICdkZW1vKCknIGZvciBzb21lIGRlbW9zLCAnaGVscCgpJyBmb3Igb24tbGluZSBoZWxwLCBvcg0KJ2hlbHAuc3RhcnQoKScgZm9yIGFuIEhUTUwgYnJvd3NlciBpbnRlcmZhY2UgdG8gaGVscC4NClR5cGUgJ3EoKScgdG8gcXVpdCBSLg0KYGBgDQoNCg0KIyBNZWdqZWxlbsOtdMOpcw0KDQpgYGB7cn0NCnsjIFByaW50DQogIHByaW50KDErMSkNCiAgDQogICMgU3RyaW5nICfigKYnDQogIHByaW50KCdIZWxsbyBLU0ghISEnKQ0KICANCiAgIyBTdHJpbmcgIuKApiINCiAgcHJpbnQoIkhlbGxvIFVzZXLigKYiKQ0KfQ0KYGBgDQoNCiMgSG96esOhcmVuZGVsw6lzDQoNCmBgYHtyfQ0KIyBBc3NpZ25tZW50IG9wZXJhdG9yDQp4IDwtIDUgKiAyDQp5ID0gJ0LDqWxhJw0KeCAtIDMgLT4geg0KDQojIEFzc2lnbm1lbnQgZnVuY3Rpb24NCmFzc2lnbigndmFsdG96bycsIHggKyB6KQ0KDQojIFNob3cgaXQhDQp7cHJpbnQoeCkNCiAgcHJpbnQoeSkNCiAgcHJpbnQoeikNCiAgcHJpbnQodmFsdG96byl9DQpgYGANCg0KIyBBZGF0dMOtcHVzb2sNCg0KIyMgTnVtZXJpYw0KDQojIyMgSW50ZWdlcg0KDQpgYGB7cn0NCiMgSW1wbGljaXQgaW50ZWdlciB3aXRoIGBMYA0KeCA9IDEyMzRMDQoNCiMgRXhwbGljaXQgaW50ZWdlcg0KeSA9IGFzLmludGVnZXIoNDU2LjgyMykNCg0KIyBTaG93IGl0IQ0Ke3ByaW50KHgpDQogIHByaW50KHkpfQ0KYGBgDQoNCiMjIyBEb3VibGUNCg0KYGBge3J9DQojIFdoZW4gbm90IGRlZmluZWQgYXMgaW50ZWdlciwgbnVtZXJpYyBiZWNvbWVzIGEgZG91YmxlDQp4ID0gMTUNCnkgPSAxNS44OTYNCg0KIyBTaG93IGl0IQ0Ke3ByaW50KHgpDQogIHByaW50KHkpfQ0KYGBgDQoNCiMjIENoYXJhY3RlciAoc3RyaW5nKQ0KDQpgYGB7cn0NCiMgSW1wbGljaXQNCnggPSAnQSB2ZXJ5IGxvbmcgc3RyaW5nIScNCg0KIyBFeHBsaWNpdA0KeSA9IGFzLmNoYXJhY3RlcigxMjM0KQ0KDQojIFNob3cgaXQhDQp7cHJpbnQoeCkNCiAgcHJpbnQoeSl9DQpgYGANCg0KIyMgTG9naWNhbCAoYm9vbGVhbikNCg0KYGBge3J9DQojIFRydWUNCngxID0gVA0KeDIgPSBUUlVFDQp4MyA9IGFzLmxvZ2ljYWwoMSkNCg0KIyBGYWxzZQ0KeTEgPSBGDQp5MiA9IEZBTFNFDQp5MyA9IGFzLmxvZ2ljYWwoMCkNCg0KIyBXb3JrcyBhcyAxLzAgYXMgd2VsbCENCmxvZ2ljYWxfc3VtID0geDEgKyB4MiArIHkxDQoNCiMgU2hvdyBpdCENCntwcmludCh4MSkNCiAgcHJpbnQoeDIpDQogIHByaW50KHgzKQ0KICBwcmludCh5MSkNCiAgcHJpbnQoeTIpDQogIHByaW50KHkzKQ0KICBwcmludChsb2dpY2FsX3N1bSl9DQpgYGANCg0KIyBWZWt0b3INCg0KYGBge3J9DQojIENvbWJpbmUgZWxlbWVudHMNCmtvcmV2ID0gYygyNSwgMzUsIDQ4LCAxMCkNCnZpc2VsdG5ldiA9IGMoJ0JlcnTDs2sgQsOpbGEnLCAnS2lzcyBLw6Fyb2x5JywgJ0xlbmd5ZWwgTGlsbGEnLCAnTm92w6FrIE7Ds3JhJykNCg0KIyBDb21iaW5lIHZlY3RvcnMNCmtvcmV2ID0gYyhrb3JldiwgNTIsIGMoNjYsIDEzKSkNCg0KdWpfbmV2ZWsgPSBjKCdNYWd5YXIgTcOhcnRvbicsICdIb3J2w6F0aCBIZWxnYScsICdBbmd5YWwgQWxiZXJ0JykNCnZpc2VsdG5ldiA9IGModmlzZWx0bmV2LCB1al9uZXZlaykNCg0KIyBNdXRhc2QgDQp7cHJpbnQoa29yZXYpDQogIHByaW50KHZpc2VsdG5ldil9DQpgYGANCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgS2FsYW5kb2siDQpvdXRwdXQ6IA0KICBodG1sX25vdGVib29rOiANCiAgICBoaWdobGlnaHQ6IHplbmJ1cm4NCiAgICBudW1iZXJfc2VjdGlvbnM6IHllcw0KICAgIHRoZW1lOiBjb3Ntbw0KICAgIGNvZGVfZm9sZGluZzogbm9uZQ0KICAgIHRvYzogeWVzDQogICAgdG9jX2Zsb2F0OiB0cnVlDQotLS0NCg0KYGBge2Nzc30NCi5tYWluLWNvbnRhaW5lciB7DQogICAgbWF4LXdpZHRoOiAxNTAwcHggIWltcG9ydGFudDsNCiAgICB0ZXh0LWFsaWduOiBqdXN0aWZ5Ow0KfQ0KYm9keXsNCiAgZm9udC1mYW1pbHk6IENhbGlicmk7DQogIGZvbnQtc2l6ZTogMTVwdDsNCn0NCmNvZGUucnsNCiAgZm9udC1zaXplOiAxN3B4Ow0KfQ0KcHJlIHsNCiAgZm9udC1zaXplOiAxN3B4Ow0KICBtYXgtaGVpZ2h0OiA4MDBweCAhaW1wb3J0YW50Ow0KICBvdmVyZmxvdy15OiBhdXRvICFpbXBvcnRhbnQ7DQogIG92ZXJmbG93LXg6IGF1dG8gIWltcG9ydGFudDsNCn0NCmBgYA0KDQpGb2x5YW1hdG9zYW4gYsWRdsO8bMWRIGRva3VtZW50w6FjacOzIGF6IFItZXMgdGFsw6Fsa296w7Npbmtyw7NsLiBIYSBoaWLDoXQgdmFneSBoacOhbnlvc3PDoWdva2F0IHRhbMOhbHRvayBiZW5uZSwgdGkgaXMgamF2w610aGF0asOhdG9rLCBkZSBtaW5kZW4gdmlzc3phamVsesOpc25layDDtnLDvGzDtmsuIEFtZW5ueWliZW4gbcOhcyBpcyDDqXJkZWtsxZFkbmUgYXogw7Zzc3plZm9nbGFsw7NrIGlyw6FudCwgZmVlbCBmcmVlIHRvIHNoYXJlISBBIGdpdGh1YiBbZmnDs2tvbWLDs2xdKGh0dHBzOi8vZ2l0aHViLmNvbS96b2VsZGkvTGVhcm5SKSBiw6Fya2kgbGV0w7ZsdGhldGkgaW5neWVuZXNlbiBheiBha3R1w6FsaXMgdmVyemnDs3QuIA0KDQojIFNldHVwDQoNCjEuIFTDtmx0c2QgbGUgYXogUi1ueWVsdiBsZWdmcmlzc2ViYiB2ZXJ6acOzasOhdCBbaW5uZW5dKGh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL2Jpbi93aW5kb3dzL2Jhc2UvKSDDqXMgdGVsZXDDrXRzZC4NCiAgICANCiAgICAtIEEgc2Fqw6F0IGfDqXBlbiBrw7Z2ZXNkIGF6IHV0YXPDrXTDoXNva2F0LiBNw6FzIGZlbGFkYXRvZCBuaW5jc2VuLg0KICAgIC0gQSBoaXZhdGFsaSBnw6lwZW4gYSB0ZWxlcMOtdMOpcyBoZWx5w6l0IG3Ds2Rvc8OtdHNkIGVycmU6DQogICAgDQogICAgICBgQzpcVXNlcnNcPGZlbGhhc3puw6Fsw7NuZXZlZD5cT3duUmANCiAgICAgICAgDQoyLiBUw7ZsdHNkIGxlIGF6IFJTdHVkaW8gbGVnZnJpc3NlYmIgRGVza3RvcCB2ZXJ6acOzasOhdCBbaW5uZW5dKGh0dHBzOi8vd3d3LnJzdHVkaW8uY29tL3Byb2R1Y3RzL3JzdHVkaW8vKSDDqXMgdGVsZXDDrXRzZC4NCg0KICAgIC0gQSBzYWrDoXQgZ8OpcGVuIGvDtnZlc2QgYXogdXRhc8OtdMOhc29rYXQuIE3DoXMgZmVsYWRhdG9kIG5pbmNzZW4uDQogICAgLSBBIGhpdmF0YWxpIGfDqXBlbiBhIHRlbGVww610w6lzIGhlbHnDqXQgbcOzZG9zw610c2QgZXJyZToNCiAgICAgIA0KICAgICAgYEM6XFVzZXJzXDxmZWxoYXN6bsOhbMOzIG5ldmVkPlxPd25SU3R1ZGlvYA0KDQozLiBJbmTDrXRzZCBlbCBheiBSU3R1ZGlvLXQgw6lzIGd5xZF6xZFkaiBtZWcgcsOzbGEsIGhvZ3kgYSBrb256b2xiYW4gZnV0IGF6IFIuDQogICAgDQogICAgLSBIYSBuZW0gaW5kdWwgYXogUiwgdmFneSBlZ3kgcsOpZ2kgdmVyemnDsyBrZXpkIGVsIGZ1dG5pLCBha2tvciBtYW51w6FsaXNhbiBrZWxsIGtpdsOhbGFzenRhbm9kIGF6IGFrdHXDoWxpc2F0LiBBeiBSU3R1ZGlvIG1lbsO8asOpYsWRbCBpbmR1bHZhLCB2w6FsYXN6ZCBhIGvDtnZldGtlesWRa2V0Og0KICAgIA0KICAgICAgYFRvb2xzID4gR2xvYmFsIE9wdGlvbnMgPiBHZW5lcmFsID4gUiBWZXJzaW9uID4gQ2hhbmdlID4gQ2hvb3NlIGEgc3BlY2lmaWMgdmVyc2lvbiA+IEJyb3dzZS4uLmANCiAgICANCiAgICAtIEEgZmVsdWdyw7MgYWJsYWtiYW4gdsOhbGFzemQga2kgYXogZWxzxZEgbMOpcMOpc2JlbiB0ZWxlcMOtdGV0dCBSIG1hcHDDoWrDoXQgYSBnw6lwZWRlbi4NCiAgICAtIE9rw6l6ZCBsZSBheiBhYmxha29rYXQgw6lzIGluZMOtdHNkIMO6anJhIGF6IFJTdHVkaW90IQ0KDQo0LiBBeiBhbMOhYmJpIGtvbnpvbMO8emVuZXQgZm9nYWQgYSBtZWdmZWxlbMWRIHZlcnrDs3N6w6FtbWFsPyBSZWFkeSB0byBnbyENCg0KYGBge30NClIgdmVyc2lvbiA0LjIuMSAoMjAyMi0wNi0yMyB1Y3J0KSAtLSAiRnVubnktTG9va2luZyBLaWQiDQpDb3B5cmlnaHQgKEMpIDIwMjIgVGhlIFIgRm91bmRhdGlvbiBmb3IgU3RhdGlzdGljYWwgQ29tcHV0aW5nDQpQbGF0Zm9ybTogeDg2XzY0LXc2NC1taW5ndzMyL3g2NCAoNjQtYml0KQ0KDQpSIGlzIGZyZWUgc29mdHdhcmUgYW5kIGNvbWVzIHdpdGggQUJTT0xVVEVMWSBOTyBXQVJSQU5UWS4NCllvdSBhcmUgd2VsY29tZSB0byByZWRpc3RyaWJ1dGUgaXQgdW5kZXIgY2VydGFpbiBjb25kaXRpb25zLg0KVHlwZSAnbGljZW5zZSgpJyBvciAnbGljZW5jZSgpJyBmb3IgZGlzdHJpYnV0aW9uIGRldGFpbHMuDQoNClIgaXMgYSBjb2xsYWJvcmF0aXZlIHByb2plY3Qgd2l0aCBtYW55IGNvbnRyaWJ1dG9ycy4NClR5cGUgJ2NvbnRyaWJ1dG9ycygpJyBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhbmQNCidjaXRhdGlvbigpJyBvbiBob3cgdG8gY2l0ZSBSIG9yIFIgcGFja2FnZXMgaW4gcHVibGljYXRpb25zLg0KDQpUeXBlICdkZW1vKCknIGZvciBzb21lIGRlbW9zLCAnaGVscCgpJyBmb3Igb24tbGluZSBoZWxwLCBvcg0KJ2hlbHAuc3RhcnQoKScgZm9yIGFuIEhUTUwgYnJvd3NlciBpbnRlcmZhY2UgdG8gaGVscC4NClR5cGUgJ3EoKScgdG8gcXVpdCBSLg0KYGBgDQoNCg0KIyBQcmludA0KDQpgYGB7cn0NCnsjIFByaW50DQogIHByaW50KDErMSkNCiAgDQogICMgU3RyaW5nICfigKYnDQogIHByaW50KCdIZWxsbyBLU0ghISEnKQ0KICANCiAgIyBTdHJpbmcgIuKApiINCiAgcHJpbnQoIkhlbGxvIFVzZXLigKYiKQ0KfQ0KYGBgDQoNCiMgQXNzaWdubWVudA0KDQpgYGB7cn0NCiMgQXNzaWdubWVudCBvcGVyYXRvcg0KeCA8LSA1ICogMg0KeSA9ICdCw6lsYScNCnggLSAzIC0+IHoNCg0KIyBBc3NpZ25tZW50IGZ1bmN0aW9uDQphc3NpZ24oJ3ZhbHRvem8nLCB4ICsgeikNCg0KIyBTaG93IGl0IQ0Kew0KICBwcmludCh4KQ0KICBwcmludCh5KQ0KICBwcmludCh6KQ0KICBwcmludCh2YWx0b3pvKQ0KfQ0KYGBgDQoNCiMgRGF0YSB0eXBlcw0KDQojIyBOdW1lcmljDQoNCiMjIyBJbnRlZ2VyDQoNCmBgYHtyfQ0KIyBJbXBsaWNpdCBpbnRlZ2VyIHdpdGggYExgDQp4ID0gMTIzNEwNCg0KIyBFeHBsaWNpdCBpbnRlZ2VyDQp5ID0gYXMuaW50ZWdlcig0NTYuODIzKQ0KDQojIFNob3cgaXQhDQp7DQogIHByaW50KHgpDQogIHByaW50KHkpDQp9DQpgYGANCg0KIyMjIERvdWJsZQ0KDQpgYGB7cn0NCiMgV2hlbiBub3QgZGVmaW5lZCBhcyBpbnRlZ2VyLCBudW1lcmljIGJlY29tZXMgYSBkb3VibGUNCnggPSAxNQ0KeSA9IDE1Ljg5Ng0KDQojIFNob3cgaXQhDQp7DQogIHByaW50KHgpDQogIHByaW50KHkpDQp9DQpgYGANCg0KIyMgQ2hhcmFjdGVyIChzdHJpbmcpDQoNCmBgYHtyfQ0KIyBJbXBsaWNpdA0KeCA9ICdBIHZlcnkgbG9uZyBzdHJpbmchJw0KDQojIEV4cGxpY2l0DQp5ID0gYXMuY2hhcmFjdGVyKDEyMzQpDQoNCiMgU2hvdyBpdCENCnsNCiAgcHJpbnQoeCkNCiAgcHJpbnQoeSkNCn0NCmBgYA0KDQojIyBMb2dpY2FsIChib29sZWFuKQ0KDQpgYGB7cn0NCiMgVHJ1ZQ0KeDEgPSBUDQp4MiA9IFRSVUUNCngzID0gYXMubG9naWNhbCgxKQ0KDQojIEZhbHNlDQp5MSA9IEYNCnkyID0gRkFMU0UNCnkzID0gYXMubG9naWNhbCgwKQ0KDQojIFdvcmtzIGFzIDEvMCBhcyB3ZWxsIQ0KbG9naWNhbF9zdW0gPSB4MSArIHgyICsgeTENCg0KIyBTaG93IGl0IQ0Kew0KICBwcmludCh4MSkNCiAgcHJpbnQoeDIpDQogIHByaW50KHgzKQ0KICBwcmludCh5MSkNCiAgcHJpbnQoeTIpDQogIHByaW50KHkzKQ0KICBwcmludChsb2dpY2FsX3N1bSkNCn0NCmBgYA0KDQojIExvZ2ljYWwgb3BlcmF0b3JzDQpgYGB7cn0NCiMgTlVtZXJpYyBkYXRhDQpudW0xID0gMTUNCm51bTIgPSAxNg0KDQojIENoYXJhY3RlciBkYXRhDQpjaGFyMSA9ICdLU0gnDQpjaGFyMiA9ICdIQ1NPJw0KDQojIExvZ2ljYWwgZGF0YQ0KbG9naWMxID0gVA0KbG9naWMyID0gRg0KDQojIFNob3cgaXQhDQp7DQogIHByaW50KG51bTEpDQogIHByaW50KG51bTIpDQogIHByaW50KGNoYXIxKQ0KICBwcmludChjaGFyMikNCiAgcHJpbnQobG9naWMxKQ0KICBwcmludChsb2dpYzIpDQp9DQpgYGANCg0KIyMgQ29tcGFyaXNvbg0KDQpgYGB7cn0NCiMgRXF1YWwgdG8NCnByaW50KGNoYXIxID09ICdIQ1NPJykNCg0KIyBOb3QgZXF1YWwgdG8NCnByaW50KG51bTEgIT0gIDEzNSkNCg0KIyBMZXNzIHRoYW4gb3IgZXF1YWwNCnByaW50KGNoYXIxIDw9IGNoYXIyKQ0KDQojIEdyZWF0ZXIgdGhhbiBvciBlcXVhbA0KcHJpbnQobnVtMSA+PSBudW0yIC0gMTAwKQ0KYGBgDQoNCiMjIENvbmRpdGlvbg0KDQpgYGB7cn0NCiMgYW5kDQp7DQogIHByaW50KG51bTEgPT0gMTAwICYgbnVtMiA9PSAxNikNCiAgcHJpbnQobnVtMSA8PSAxMDAgJiBudW0yID49IG51bTEgJiBjaGFyMSA9PSAnS1NIJykNCn0NCg0KIyBvcg0Kew0KICBwcmludChjaGFyMSkNCn0NCmBgYA0KDQoNCg0KDQojIFZlY3Rvcg0KDQojIyBDb21iaW5lDQoNCmBgYHtyfQ0KIyBDb21iaW5lIGVsZW1lbnRzDQprb3JldiA9IGMoMjUsIDM1LCA0OCwgMTApDQp2aXNlbHRuZXYgPSBjKCdCZXJ0w7NrIELDqWxhJywgJ0tpc3MgS8Ohcm9seScsICdMZW5neWVsIExpbGxhJywgJ05vdsOhayBOw7NyYScpDQoNCiMgQ29tYmluZSB2ZWN0b3JzDQprb3JldiA9IGMoa29yZXYsIDUyLCBjKDY2LCAxMykpDQoNCnVqX25ldmVrID0gYygnTWFneWFyIE3DoXJ0b24nLCAnSG9ydsOhdGggSGVsZ2EnLCAnQW5neWFsIEFsYmVydCcpDQp2aXNlbHRuZXYgPSBjKHZpc2VsdG5ldiwgdWpfbmV2ZWspDQoNCiMgTXV0YXNkIA0Kew0KICBwcmludChrb3JldikNCiAgcHJpbnQodmlzZWx0bmV2KQ0KfQ0KYGBgDQoNCiMjIEFjY2Vzcw0KDQpgYGB7cn0NCiMgQWNjZXNzIGJ5IHBvc2l0aW9uYWwgaW5kZXgNCmtvcmV2XzIgPSBrb3JldltjKDE6MywgNyldDQoNCiMgQWNjZXNzIGJ5IGJpbmFyeSBpbmRleA0KdmlzZWx0bmV2XzIgPSB2aXNlbHRuZXZbYyhULCBULCBULCBGLCBGLCBGLCBUKV0NCg0KIyBTaG93IGl0IQ0Kew0KICBwcmludChrb3Jldl8yXzEpDQogIHByaW50KHZpc2VsdG5ldl8yKQ0KfQ0KYGBgDQoNCg==</div>
 
 
 </div>
