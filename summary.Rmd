@@ -10,24 +10,55 @@ output:
     toc_float: true
 ---
 
-Folyamatosan bővülő dokumentáció az R-es találkozóinkról. Ha hibát vagy hiányosságokat találtok benne, ti is javíthatjátok, de minden visszajelzésnek örülök..
+```{css}
+.main-container {
+    max-width: 1500px !important;
+    text-align: justify;
+}
+body{
+  font-family: Calibri;
+  font-size: 15pt;
+}
+code.r{
+  font-size: 17px;
+}
+pre {
+  font-size: 17px;
+  max-height: 800px !important;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+}
+```
+
+Folyamatosan bővülő dokumentáció az R-es találkozóinkról. Ha hibát vagy hiányosságokat találtok benne, ti is javíthatjátok, de minden visszajelzésnek örülök. Amennyiben más is érdeklődne az összefoglalók iránt, feel free to share! A github [fiókomból](https://github.com/zoeldi/LearnR) bárki letöltheti ingyenesen az aktuális verziót. 
 
 # Telepítés
 
-1. Töltsd le az R-nyelv legfrissebb verzióját [innen](https://cran.r-project.org/bin/windows/base/) és telepítsd. 
-    a. Saját gépen kövesd az utasításokat. Más feladatod nincsen.
-    b. KSH-s gépen a telepítés helyét módosítsd erre: `C:\Users\<felhasználó neved>\OwnR`
+1. Töltsd le az R-nyelv legfrissebb verzióját [innen](https://cran.r-project.org/bin/windows/base/) és telepítsd.
     
+    - A saját gépen kövesd az utasításokat. Más feladatod nincsen.
+    - A hivatali gépen a telepítés helyét módosítsd erre:
+    
+      `C:\Users\<felhasználóneved>\OwnR`
+        
 2. Töltsd le az RStudio legfrissebb Desktop verzióját [innen](https://www.rstudio.com/products/rstudio/) és telepítsd.
-    a. Saját gépen kövesd az utasításokat. Más feladatod nincsen.
-    b. KSH-s gépen a telepítés helyét módosítsd erre: `C:\Users\<felhasználó neved>\OwnRStudio`
-    
+
+    - A saját gépen kövesd az utasításokat. Más feladatod nincsen.
+    - A hivatali gépen a telepítés helyét módosítsd erre:
+      
+      `C:\Users\<felhasználó neved>\OwnRStudio`
+
 3. Indítsd el az RStudio-t és győződj meg róla, hogy a konzolban fut az R.
-    i) Ha nem indul az R, vagy egy régi R verzió kezd el futni, akkor manuálisan kell kiválasztanod. Az RStudio menüjéből `Tools > Global Options > General > R Session > R Version > Change > Choose a specific version > Browse..`. A felugró ablakban válaszd ki az első lépésben telepített R mappáját a gépeden. 
-    ii) Okézd le az ablakokat és indítsd újra az RStudiot!
     
-4. Az alábbi konzolüzenet fogad a megfelelő verzószámmal? Ready to go! 
+    - Ha nem indul az R, vagy egy régi verzió kezd el futni, akkor manuálisan kell kiválasztanod az aktuálisat. Az RStudio menüjéből indulva, válaszd a következőket:
     
+      `Tools > Global Options > General > R Version > Change > Choose a specific version > Browse...`
+    
+    - A felugró ablakban válaszd ki az első lépésben telepített R mappáját a gépeden.
+    - Okézd le az ablakokat és indítsd újra az RStudiot!
+
+4. Az alábbi konzolüzenet fogad a megfelelő verzószámmal? Ready to go!
+
 ```{}
 R version 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
 Copyright (C) 2022 The R Foundation for Statistical Computing
@@ -50,19 +81,16 @@ Type 'q()' to quit R.
 # Megjelenítés
 
 ```{r}
-# With print
-print(1+1)
-
-# Without print
-5-3
-
-# String '...'
-print('Hello KSH!!!')
-
-# String "..."
-print("Hello User...")
+{# Print
+  print(1+1)
+  
+  # String '…'
+  print('Hello KSH!!!')
+  
+  # String "…"
+  print("Hello User…")
+}
 ```
-
 
 # Hozzárendelés
 
@@ -82,12 +110,12 @@ assign('valtozo', x + z)
   print(valtozo)}
 ```
 
-
 # Adattípusok
 
 ## Numeric
 
 ### Integer
+
 ```{r}
 # Implicit integer with `L`
 x = 1234L
@@ -101,6 +129,7 @@ y = as.integer(456.823)
 ```
 
 ### Double
+
 ```{r}
 # When not defined as integer, numeric becomes a double
 x = 15
@@ -112,6 +141,7 @@ y = 15.896
 ```
 
 ## Character (string)
+
 ```{r}
 # Implicit
 x = 'A very long string!'
@@ -125,6 +155,7 @@ y = as.character(1234)
 ```
 
 ## Logical (boolean)
+
 ```{r}
 # True
 x1 = T
@@ -166,4 +197,3 @@ viseltnev = c(viseltnev, uj_nevek)
 {print(korev)
   print(viseltnev)}
 ```
-
