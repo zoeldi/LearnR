@@ -1,0 +1,169 @@
+---
+title: "R Kalandok"
+output: 
+  html_notebook: 
+    highlight: zenburn
+    number_sections: yes
+    theme: cosmo
+    code_folding: none
+    toc: yes
+    toc_float: true
+---
+
+Folyamatosan bővülő dokumentáció az R-es találkozóinkról. Ha hibát vagy hiányosságokat találtok benne, ti is javíthatjátok, de minden visszajelzésnek örülök..
+
+# Telepítés
+
+1. Töltsd le az R-nyelv legfrissebb verzióját [innen](https://cran.r-project.org/bin/windows/base/) és telepítsd. 
+    a. Saját gépen kövesd az utasításokat. Más feladatod nincsen.
+    b. KSH-s gépen a telepítés helyét módosítsd erre: `C:\Users\<felhasználó neved>\OwnR`
+    
+2. Töltsd le az RStudio legfrissebb Desktop verzióját [innen](https://www.rstudio.com/products/rstudio/) és telepítsd.
+    a. Saját gépen kövesd az utasításokat. Más feladatod nincsen.
+    b. KSH-s gépen a telepítés helyét módosítsd erre: `C:\Users\<felhasználó neved>\OwnRStudio`
+    
+3. Indítsd el az RStudio-t és győződj meg róla, hogy a konzolban fut az R.
+    i) Ha nem indul az R, vagy egy régi R verzió kezd el futni, akkor manuálisan kell kiválasztanod. Az RStudio menüjéből `Tools > Global Options > General > R Session > R Version > Change > Choose a specific version > Browse..`. A felugró ablakban válaszd ki az első lépésben telepített R mappáját a gépeden. 
+    ii) Okézd le az ablakokat és indítsd újra az RStudiot!
+    
+4. Az alábbi konzolüzenet fogad a megfelelő verzószámmal? Ready to go! 
+    
+```{}
+R version 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+```
+
+
+# Megjelenítés
+
+```{r}
+# With print
+print(1+1)
+
+# Without print
+5-3
+
+# String '...'
+print('Hello KSH!!!')
+
+# String "..."
+print("Hello User...")
+```
+
+
+# Hozzárendelés
+
+```{r}
+# Assignment operator
+x <- 5 * 2
+y = 'Béla'
+x - 3 -> z
+
+# Assignment function
+assign('valtozo', x + z)
+
+# Show it!
+{print(x)
+  print(y)
+  print(z)
+  print(valtozo)}
+```
+
+
+# Adattípusok
+
+## Numeric
+
+### Integer
+```{r}
+# Implicit integer with `L`
+x = 1234L
+
+# Explicit integer
+y = as.integer(456.823)
+
+# Show it!
+{print(x)
+  print(y)}
+```
+
+### Double
+```{r}
+# When not defined as integer, numeric becomes a double
+x = 15
+y = 15.896
+
+# Show it!
+{print(x)
+  print(y)}
+```
+
+## Character (string)
+```{r}
+# Implicit
+x = 'A very long string!'
+
+# Explicit
+y = as.character(1234)
+
+# Show it!
+{print(x)
+  print(y)}
+```
+
+## Logical (boolean)
+```{r}
+# True
+x1 = T
+x2 = TRUE
+x3 = as.logical(1)
+
+# False
+y1 = F
+y2 = FALSE
+y3 = as.logical(0)
+
+# Works as 1/0 as well!
+logical_sum = x1 + x2 + y1
+
+# Show it!
+{print(x1)
+  print(x2)
+  print(x3)
+  print(y1)
+  print(y2)
+  print(y3)
+  print(logical_sum)}
+```
+
+# Vektor
+
+```{r}
+# Combine elements
+korev = c(25, 35, 48, 10)
+viseltnev = c('Bertók Béla', 'Kiss Károly', 'Lengyel Lilla', 'Novák Nóra')
+
+# Combine vectors
+korev = c(korev, 52, c(66, 13))
+
+uj_nevek = c('Magyar Márton', 'Horváth Helga', 'Angyal Albert')
+viseltnev = c(viseltnev, uj_nevek)
+
+# Mutasd 
+{print(korev)
+  print(viseltnev)}
+```
+
